@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0;
+    margin: 0 auto;
+    animation: shift 3s;
+}
+
+.holiday{
+    background-image: url(../img/9mae1.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+}
+
+.text{
+    
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*chronology */
+.block {
+    position: relative;
+    width:    50%;
+    padding:  10px;
+  }
+  
+  .block.left {
+    border-right:   5px solid #3d4bb6;
+    padding-right:  70px;
+  }
+  
+  .block.right {
+    margin-left:    calc(50% - 5px);
+    border-left:    5px solid #3d4bb6;
+    padding-left:   70px;
+  }
+  
+  .index { 
+    position:       absolute;
+    top:            -15px;
+  
+    width:          30px;
+    height:         30px;
+    
+    color:          #087823;
+    background:     white;
+  
+    border:         2px solid #3d4bb6;
+    border-radius:  15px;
+    
+    line-height:    26px;
+    text-align:     center;
+    
+    font-size:      24px;
+    font-weight:    bold;
+    font-weight:    Calibri;
+  }
+  
+  .block.left .index {
+    right:          calc(-15px - 2px);
+  }
+  
+  .block.right .index {
+    left:          calc(-15px - 2px);
+  }
+  
+  .title {
+    position:       relative;
+  
+    width:          100%;
+    margin-bottom:  20px;
+    
+    font-weight:    bold;
+  }
+  
+  .left .title {
+    text-align:     right;
+  }
+  
+  .title:after {
+    content: "";
+    
+    display:  inline-block;
+    
+    position: absolute;
+    top:      20px;
+    
+    width:    20px;
+    height:   2px;
+    
+    background: #087823;
+  }
+  
+  .left .title:after {
+    right:    0px;
+  }
+  
+  .right .title:after {
+    left:    0px;
+  }
+  
+  .right .title {
+    text-align:     left;
+  }
+  
+  .content {
+    text-align:     justify;
